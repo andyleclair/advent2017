@@ -1,4 +1,5 @@
 require Advent01.Problem01
+require Advent01.Problem02
 
 defmodule Advent01 do
   @moduledoc """
@@ -16,6 +17,10 @@ defmodule Advent01 do
   """
   def problem_one() do
     Advent01.Problem01.solve_captcha(captcha())
+  end
+
+  def problem_two() do
+    Advent01.Problem02.solve_captcha(captcha())
   end
 
   defp captcha, do: Application.get_env(:advent01, :captcha)
